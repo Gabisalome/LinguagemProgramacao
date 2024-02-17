@@ -23,14 +23,37 @@ void G03 (){
  printf (" media de %d %d %d = %2.f\n" , num1, num2, num3, med);     
 }
 //4. Faça um programa que leia e imprima um número inteiro.
-
+void G4 () {
+    int numero;
+    scanf("%d", &numero);
+    printf("Numero digitado: %d, numero");
+}
 //5. Faça um programa que leia dois números reais e os imprima.
+void G5 () {
+    float numero1;
+    float numero2;
+    printf (" escreva um numero real: ");
+    scanf("%f", &numero1);
+    printf (" escreva um numero real: ");
+    scanf("%f", &numero2);
+    printf (" os numeros reais sao: %.1f, %.f", numero1, numero2);
 
+}
 //6. Faça um programa que leia um número inteiro e imprima o seu
 //   antecessor e o seu sucessor.
 
 //7. Faça um programa que leia o nome o endereço e o telefone de
 //   um cliente e ao final, imprima esses dados.
+void G7 () {
+    char nome[50], endereco[70], telefone[14];
+    printf("Nome: ");
+    scanf(" %50[^\n]",&nome);
+     printf("Endereco: ");
+    scanf(" %70[^\n]",&endereco);
+     printf("Telefone: ");
+    scanf(" %15[^\n]",&telefone);
+    printf("Nome: %s\nEndereço: %s\nTelefone: %s\n",nome,endereco,telefone);
+}
 
 //8. Faça um programa que leia dois números inteiros e imprima a
 //   subtração deles.
@@ -96,7 +119,7 @@ void G03 (){
 //    necessário também ler o valor da cotação do dólar.
 
 int main (){
- G04();
+ G7();
 
 return EXIT_SUCCESS;    
 }
